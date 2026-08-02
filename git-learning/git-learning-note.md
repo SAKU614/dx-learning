@@ -79,19 +79,30 @@ https://github.com/
 
 ### ユーザー名確認
 
-```bash
+```
+bash
 git config --global user.name
+```
 
-###メールアドレス確認
-```bash
+### メールアドレス確認
+
+```
+bash
 git config --global user.email
+```
 
-###メールアドレス確認結果例
+### メールアドレス確認結果例
+
+```
 user.name=sato-dx
 user.email=xxxxx@gmail.com
+```
 
-#5. VS CodeとGitHubを連携
-手順
+---
+
+# 5. VS CodeとGitHubを連携
+
+## 確認手順：
 
 1. VS Codeを起動
 2. 左下のアカウントアイコンをクリック
@@ -104,57 +115,102 @@ user.email=xxxxx@gmail.com
 
 5. VS Codeへ戻る
 
-確認
+## 確認：
 
 左下にGitHubユーザー名が表示されれば完了。
 
-#6. GitHubリポジトリ作成
+
+---
+
+
+# ６. GitHubリポジトリ作成
+
 リポジトリとは
 
 プロジェクトを保存する場所。
 
-##例：
+
+## 例：
+
+```
 GitHub
 
 dx-learning
 
-#7.Clone（複製）
+```
+
+## 作成手順：
+
+1. GitHubへログイン
+2. 「New repository」を選択
+3. Repository nameを入力
+
+例：
+```
+dx-learning
+```
+4. Descriptionを入力
+例：
+```
+Learning repository for DX, Git, GitHub, kintone, Tableau, and JavaScript.
+```
+5. Publicを選択
+6. README作成にチェック
+7. Create repository
+
+---
+
+# 7. Clone（複製）
+
 Cloneとは
 
 GitHub上のリポジトリを自分のパソコンへコピーすること。
 
-手順
+## 手順：
 
 1. VS Codeを開く
 2. Command Paletteを開く
 
+```
 ⌘ + Shift + P
+```
 
 3. 以下を選択
 
+```
 Git: Clone
+```
+※日本語表示では「複製」
 
+4. GitHubリポジトリを選択
+
+```
 dx-learning
+```
 
 5. 保存場所を指定
 6. Open Repositoryを選択
 
-#8. Workspace Trust（制限モード解除）
+---
+
+# 8. Workspace Trust（制限モード解除）
 
 制限モードとは
 
 安全確認のためVS Codeが機能を制限している状態。
 
-対応
+## 対応：
 
 1. 上部の「制限モードになっています」をクリック
 2. 「ワークスペースを信頼する」を選択
 
-#9. Commit（コミット）
+---
+
+# 9. Commit（コミット）
 
 Commitとは、変更履歴を保存する操作。
 
-流れ
+## 流れ：
 ファイル編集
 
 ↓
@@ -169,14 +225,21 @@ Commit
 
 変更履歴として保存
 
-Commitメッセージ例
-Add Git learning notes
 
-#10.Push（プッシュ）
+Commitメッセージ例
+
+```
+Add Git learning notes
+```
+
+---
+
+# 10.Push（プッシュ）
+
 Pushとは
 Mac内のGitの変更履歴をGitHubへ送信する操作。
 
-流れ
+## 流れ：
 Mac
 
 Commit済み
@@ -189,8 +252,18 @@ Push
 
 GitHubへ反映
 
-#11. Git学習ログの管理方法
-推奨フォルダ構成
+Commitメッセージ例：
+```
+Add Git learning notes
+```
+
+---
+
+# 11. Git学習ログの管理方法
+
+## 推奨フォルダ構成：
+
+```
 dx-learning
 
 ├── git-learning
@@ -205,7 +278,12 @@ dx-learning
 └── ai-learning
     └── 学習記録
 
- #12.Gitを使った基本サイクル 
+```
+
+---
+
+# 12.Gitを使った基本サイクル 
+
   今後の開発では以下を繰り返す。
 
   ① ファイル作成・編集
@@ -228,18 +306,28 @@ git status
 
 GitHubへ反映
 
-#13. 今回学んだGitコマンド
+---
+
+# 13. 今回学んだGitコマンド
 
 状態保存：現在の変更状態を確認します
-''Bash
+
+```Bash
 git status
+```
 
 Git設定確認：ユーザー情報を確認します
-''Bash
+
+```
+Bash
 git config --global user.name
 git config --global user.email
+```
 
-#14. 今回の学習ポイント
+---
+
+# 14. 今回の学習ポイント
+
 * Gitは変更履歴管理ツール
 * GitHubはGitデータの保存場所
 * Repositoryはプロジェクト単位の保存場所
